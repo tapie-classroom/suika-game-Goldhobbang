@@ -145,8 +145,6 @@ function startGame() {
     // 과일을 떨어뜨리는 마우스 클릭 이벤트 리스너 코드를 작성해봅시다.
     Events.on(mouseConstraint, 'mouseup', handleFruitDrop);
     Events.on(mouseConstraint, 'mousemove', handleFruitPreviewMove);
-
-    // 과일 합치기 및 게임 오버를 감지하는 충돌 이벤트 리스너 코드를 작성해봅시다.
     Events.on(engine, 'collisionStart', handleCollision);
     // 미리보기 과일 위치를 업데이트하는 마우스 이동 이벤트 리스너 코드를 작성해봅시다.
 
